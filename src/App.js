@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Character from './components/Character';
-import Location from './components/Location';
+import CharacterItem from './components/CharacterItem';
 import About from './components/About';
 import React, { useState, useEffect } from 'react';
 
@@ -12,15 +12,15 @@ function App() {
   let [fetchedData, updateFetchedData] = useState([]);
   let { info, results } = fetchedData;
 
-// console.log(results)
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  // console.log(results)
+  let url = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
   useEffect(() => {
     (async function () {
-      let data = await fetch(api).then((res) => res.json());
+      let data = await fetch(url).then((res) => res.json());
       updateFetchedData(data);
     })();
-  }, [api]);
+  }, [url]);
 
   return (
     <div className="App">
@@ -28,8 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Character/:symbol" element={<Character results={results} />} />
-        <Route path="/Location" element={<Location />} />
+        <Route path="/Character" element={<Character results={results} />} />
+        <Route path="/Character/:symbol" element={<CharacterItem />} />
       </Routes>
     </div>
   );

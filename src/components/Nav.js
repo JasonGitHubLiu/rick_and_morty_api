@@ -9,11 +9,8 @@ export default function Nav() {
       <Link to="/About">
         <div>About</div>
       </Link>
-      <Link to="/Character/:symbol">
+      <Link to="/Character">
         <div>Character</div>
-      </Link>
-      <Link to="/Location">
-        <div>Location</div>
       </Link>
     </div>
   );
