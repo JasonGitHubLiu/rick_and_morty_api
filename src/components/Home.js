@@ -1,3 +1,9 @@
 export default function Home() {
-  return <div>This is the home page!</div>;
+  return (
+    // style={{backGroundColor: 'black'}}
+    <div className="home">
+      <img src={require("../images/Rick and morty banner.gif")}></img>
+      <img src={require("../images/Rick and morty portal.gif")}></img>
+    </div>
+  )
 }
