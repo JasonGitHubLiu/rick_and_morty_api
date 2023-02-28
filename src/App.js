@@ -8,19 +8,21 @@ import About from './components/About';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  let [pageNumber, setPageNumber] = useState(1);
-  let [fetchedData, updateFetchedData] = useState([]);
+  let [currentPage, setCurrentPage] = useState(1);
+  let [fetchedData, setFetchedData] = useState([]);
   let { info, results } = fetchedData;
 
   // console.log(results)
-  let url = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
 
   useEffect(() => {
     (async function () {
       let data = await fetch(url).then((res) => res.json());
-      updateFetchedData(data);
+      setFetchedData(data);
     })();
   }, [url]);
+
+  
 
   return (
     <div className="App">
@@ -31,6 +33,8 @@ function App() {
         <Route path="/Character" element={<Character results={results} />} />
         <Route path="/Character/:symbol" element={<CharacterItem />} />
       </Routes>
+      <button onClick={()=>setCurrentPage(currentPage-1)}>Previous</button>
+      <button onClick={()=>setCurrentPage(currentPage+1)}>Next</button>
     </div>
   );
 }

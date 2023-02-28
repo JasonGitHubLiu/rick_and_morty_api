@@ -2,11 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function CharacterItem({ results }) {
-  //   let Character = ({ results }) => {
-  // console.log(results)
-
-  let display;
-  // console.log(results);
   let [data, setData] = useState();
   let { symbol } = useParams();
 
@@ -21,31 +16,9 @@ export default function CharacterItem({ results }) {
     })();
   }, []);
 
-  // if (results) {
-  //   display = results.map((mapResults) => {
-  //     let { id, name, image, location, status } = mapResults;
-  //     return (
-  //       <div key={id} className="row">
-  //         <div>
-  //           <img src={image} alt="" className="" />
-  //           <div className="content">
-  //             <div className="">
-  //               <b>{name}</b>
-  //             </div>
-  //             <div>Location: {location.name}</div>
-  //           </div>
-  //         </div>
-  //         <div className="status">Status: {status}</div>
-  //       </div>
-  //     );
-  //   });
-  // } else {
-  //   display = 'No Character Found :(';
-  // }
-
   return (
     <div>
-      {data && (
+      {data && ( //need to download/render data before I can access it. If this line of code not included, it will not display anything.
         <div>
           <h1>Name: {data.name}</h1>
           <img src={data.image} alt={data.name}></img>
@@ -57,12 +30,4 @@ export default function CharacterItem({ results }) {
       )}
     </div>
   );
-  //   };
 }
-
-//   console.log(results)
-
-//     return (
-//       <div> This is the character page!</div>
-//   )
-// }

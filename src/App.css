@@ -1,9 +1,35 @@
+p {
+  inline-size: 800px;
+  /* overflow-wrap: break-word; */
+  font-size: 35px;
+  margin: auto;
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* display: block; */
+  /* text-align: center; */
+  padding-top: 10%;
+ }
+
+/* .background{
+  background-image: url(./images/RMA.gif);
+  background-size: cover;
+  height: 100vh;
+} */
+
+.background {
+  background-image: url(./images/RMA.gif);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  /* opacity: 50%; */
+}
+
 .row {
   display: grid;
   grid-template-columns: 'repeat(4, 1fr)';
 }
 
-.home{
+.home {
   background-color: black;
   height: 100vh;
 }
