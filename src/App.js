@@ -12,7 +12,7 @@ function App() {
   let [fetchedData, setFetchedData] = useState([]);
   let { info, results } = fetchedData;
 
-  console.log(results)
+  console.log(results);
   let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
 
   useEffect(() => {
@@ -20,11 +20,9 @@ function App() {
       let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
       let data = await fetch(url).then((res) => res.json());
       setFetchedData(data);
-      console.log(data)
+      console.log(data);
     })();
   }, [url]);
-
-
 
   return (
     <div className="App">
@@ -32,7 +30,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Character" element={<Character fetchedData={fetchedData} />} />
+        <Route
+          path="/Character"
+          element={<Character fetchedData={fetchedData} />}
+        />
         <Route path="/Character/:symbol" element={<CharacterItem />} />
       </Routes>
       {/* <button onClick={()=>setCurrentPage(currentPage-1)}>Previous</button>

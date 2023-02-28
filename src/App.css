@@ -3,7 +3,7 @@ p {
   font-size: 35px;
   margin: auto;
   padding-top: 10%;
- }
+}
 
 .background {
   background-image: url(./images/RMA.gif);
@@ -12,10 +12,9 @@ p {
   height: 100vh;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 'repeat(4, 1fr)';
-}
+/* .btn{
+  height:;
+} */
 
 .home {
   background-color: black;
