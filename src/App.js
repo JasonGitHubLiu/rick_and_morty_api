@@ -6,6 +6,7 @@ import Character from './components/Character';
 import CharacterItem from './components/CharacterItem';
 import About from './components/About';
 import React, { useState, useEffect } from 'react';
+import Form from './components/Form';
 
 function App() {
   let [currentPage, setCurrentPage] = useState(1);
