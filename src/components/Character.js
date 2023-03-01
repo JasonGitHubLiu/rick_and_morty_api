@@ -71,8 +71,8 @@ export default function Character({ fetchedData }) {
         {display}
       </div>
       <div className="btn">
-        {data?.info?.prev && <button onClick={prevPage}>Previous</button>}
-        {data?.info?.next && <button onClick={page}>Next</button>}
+        {data?.info?.prev && <button className='btn1' onClick={prevPage}>Previous</button>}
+        {data?.info?.next && <button className='btn2' onClick={page}>Next</button>}
         {/* <button onClick={page}>{currentPage}</button> */}
       </div>
     </>

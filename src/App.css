@@ -3,6 +3,8 @@ p {
   font-size: 35px;
   margin: auto;
   padding-top: 10%;
+  /* text-shadow: white 10px; */
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .background {
@@ -12,9 +14,22 @@ p {
   height: 100vh;
 }
 
-/* .btn{
-  height:;
-} */
+.btn{
+  font-size: 20px;
+  padding: 32px 16px;
+  /* width: 90px;  */
+   height: 100px;
+}
+
+.btn1{
+  width: 100px;
+  /* padding-right: 10%; */
+  margin-right: 5%;
+}
+
+.btn2{
+  width: 100px;
+}
 
 .home {
   background-color: black;
@@ -23,16 +38,17 @@ p {
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  background-color: black;
+  justify-content: space-evenly;
+  background-color: #10aec5;
   color: white;
   padding: 15px;
   font-size: 2em;
 }
 
 .nav a {
-  color: white;
+  color: #74f344;
   text-decoration: none;
+  /* font-family: ; */
 }
 
 .App {
