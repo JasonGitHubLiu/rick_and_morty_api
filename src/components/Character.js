@@ -55,7 +55,7 @@ export default function Character({ fetchedData }) {
   function prevPage() {
     console.log(currentPage);
     // console.log(url)
-    let urlPage = { currentPage } - 1;
+    let urlPage = currentPage - 1;
     setCurrentPage(urlPage);
   }
 
@@ -76,12 +76,12 @@ export default function Character({ fetchedData }) {
             Previous
           </button>
         )}
+        <button className='pg'>{currentPage}</button>
         {data?.info?.next && (
           <button className="btn2" onClick={page}>
             Next
           </button>
         )}
-        {/* <button onClick={page}>{currentPage}</button> */}
       </div>
     </>
   );

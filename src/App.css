@@ -17,6 +17,7 @@ p {
   font-size: 20px;
   padding: 32px 16px;
   height: 100px;
+  justify-content: space-evenly;
 }
 
 .btn1 {
@@ -36,6 +37,11 @@ p {
   background-color: #74f344;
   font-size: large;
   border: #10aec5 3px solid;
+}
+
+.pg{
+  font-size: large;
+  /* margin-right: 50px; */
 }
 
 .home {
