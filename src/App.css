@@ -60,14 +60,14 @@ p {
 .nav {
   display: flex;
   justify-content: space-evenly;
-  background-color: #10aec5;
+  background-color: #0d6efd;
   color: white;
   padding: 15px;
   font-size: 2em;
 }
 
 .nav a {
-  color: #a4da7c;
+  color: white;
   text-decoration: none;
   font-family: fantasy;
 }

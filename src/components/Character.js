@@ -47,7 +47,7 @@ export default function Character({ fetchedData }) {
               <div className="content"></div>
             </div>
           </Link>
-          <b className="text-white">{name}</b>
+          <b className="text-white fst-italic fs-1">{name}</b>
         </div>
       );
     });
