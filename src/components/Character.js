@@ -55,13 +55,13 @@ export default function Character({ fetchedData }) {
     display = 'No Character Found :(';
   }
 
-  function page() {
-    // console.log('hi')
-    // console.log(next)
-    // let urlPage = next.match(/(\d+)/); //grabs number from string and puts into variable
-    // console.log(urlPage[0])
-    setCurrentPage(urlPage[0]);
-  }
+  // function page() {
+  //   // console.log('hi')
+  //   // console.log(next)
+  //   // let urlPage = next.match(/(\d+)/); //grabs number from string and puts into variable
+  //   // console.log(urlPage[0])
+  //   setCurrentPage(urlPage[0]);
+  // }
 
   // function prevPage() {
   //   console.log(currentPage);
@@ -75,10 +75,10 @@ export default function Character({ fetchedData }) {
     console.log(name);
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    getChar(input);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   getChar(input);
+  // }
 
   const nextPage = async () => {
     console.log('hello');
@@ -111,56 +111,57 @@ export default function Character({ fetchedData }) {
 
   return (
     <>
-    <div className='charBG'>
-      <br></br>
-      <input
-        className='btn btn-light'
-        value={input}
-        onChange={(e) => {
-          setInput(e.target.value);
-        }}
-      />
-      <button className='btn btn-outline-primary ' onClick={handleChange}>Search</button>
-      <div></div>
-      <br></br>
-      <div className="btn">
-        {data?.info?.prev && (
-          <button className="btn btn-primary" onClick={prevPage}>
-            Previous
-          </button>
-        )}
-        {/* <button className='btn btn-light'>{currentPage}</button> */}
-        {data?.info?.next && (
-          <button className="btn btn-primary" onClick={nextPage}>
-            Next
-          </button>
-        )}
-        
-      </div>
+      <div className="charBG">
+        <br></br>
+        <input
+          className="btn btn-light"
+          value={input}
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+        />
+        <button className="btn btn-outline-primary " onClick={handleChange}>
+          Search
+        </button>
+        <div></div>
+        <br></br>
+        <div className="btn">
+          {data?.info?.prev && (
+            <button className="btn btn-primary" onClick={prevPage}>
+              Previous
+            </button>
+          )}
+          {/* <button className='btn btn-light'>{currentPage}</button> */}
+          {data?.info?.next && (
+            <button className="btn btn-primary" onClick={nextPage}>
+              Next
+            </button>
+          )}
+        </div>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gridGap: '20px',
-        }}
-      >
-        {display}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gridGap: '20px',
+          }}
+        >
+          {display}
+        </div>
+        <div className="btn">
+          {data?.info?.prev && (
+            <button className="btn btn-primary" onClick={prevPage}>
+              Previous
+            </button>
+          )}
+          {/* <button className='btn btn-light'>{currentPage}</button> */}
+          {data?.info?.next && (
+            <button className="btn btn-primary" onClick={nextPage}>
+              Next
+            </button>
+          )}
+        </div>
       </div>
-      <div className="btn">
-        {data?.info?.prev && (
-          <button className="btn btn-primary" onClick={prevPage}>
-            Previous
-          </button>
-        )}
-        {/* <button className='btn btn-light'>{currentPage}</button> */}
-        {data?.info?.next && (
-          <button className="btn btn-primary" onClick={nextPage}>
-            Next
-          </button>
-        )}
-      </div>
-    </div>
     </>
   );
 }
