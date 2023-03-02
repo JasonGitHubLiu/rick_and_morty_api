@@ -39,15 +39,15 @@ export default function Character({ fetchedData }) {
       let { id, name, image } = mapResults;
       // let { id, name, image, location, status } = mapResults;
       return (
-        <div className='border border-primary rounded-4'>
-        <Link to={`/Character/${id}`} key={id}>
-          <div>
-            <img src={image} alt="image of {name}" />
-            <div className="content">
+        <div className="border border-primary rounded-4 border-3">
+          <br></br>
+          <Link to={`/Character/${id}`} key={id}>
+            <div>
+              <img src={image} alt="image of {name}" />
+              <div className="content"></div>
             </div>
-          </div>
-        </Link>
-      <b className='text-white'>{name}</b>
+          </Link>
+          <b className="text-white">{name}</b>
         </div>
       );
     });
@@ -153,7 +153,7 @@ export default function Character({ fetchedData }) {
           {display}
         </div>
         <div className="btn">
-        <br></br>
+          <br></br>
           {data?.info?.prev && (
             <button className="btn btn-primary" onClick={prevPage}>
               Previous
