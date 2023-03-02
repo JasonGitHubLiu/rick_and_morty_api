@@ -11,11 +11,12 @@ export default function Character({ fetchedData }) {
   let [next, setNext] = useState('');
   let [prev, setPrev] = useState('');
   let [input, setInput] = useState('');
-  let [search, setSearch] = useState('');
   let [name, setName] = useState('');
+  let [search, setSearch] = useState('');
 
   // let [url, setUrl] = useState('')
   //filter -conditional, if it does something, return true, else return false. and use includes
+
   useEffect(() => {
     (async function () {
       // let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
@@ -30,7 +31,6 @@ export default function Character({ fetchedData }) {
       setPrev(data.info.prev);
       // console.log(prev)
       // console.log(next);
-      // console.log(prev);
       // console.log(data);
     })();
   }, [name]);
@@ -141,9 +141,10 @@ export default function Character({ fetchedData }) {
 
         <div
           style={{
+            // border: 'red 1px solid',
             display: 'grid',
             gridTemplateColumns: 'repeat(4, 1fr)',
-            gridGap: '20px',
+            gridGap: '10px',
           }}
         >
           {display}

@@ -1,13 +1,14 @@
 p {
   inline-size: 800px;
-  font-size: 35px;
+  font-size: 30px;
   margin: auto;
-  padding-top: 10%;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  padding-top: 3%;
+  text-shadow: 1px 1px 1px #a4da7c, 0 0 1em green, 0 0 0.2em #a4da7c;
+  color: #3ca21d;
 }
 
 .background {
-  background-image: url(./images/RMA.gif);
+  background-image: url(./images/RMportal.gif);
   background-size: 100% 100%;
   background-position: center;
   height: 100vh;
