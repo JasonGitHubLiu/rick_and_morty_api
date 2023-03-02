@@ -111,28 +111,31 @@ export default function Character({ fetchedData }) {
 
   return (
     <>
+    <div className='charBG'>
+      <br></br>
       <input
+        className='btn btn-light'
         value={input}
         onChange={(e) => {
           setInput(e.target.value);
         }}
       />
-      <button onClick={handleChange}>Search</button>
-
-      {/* <Form getChar={getChar}/> */}
+      <button className='btn btn-outline-primary ' onClick={handleChange}>Search</button>
       <div></div>
+      <br></br>
       <div className="btn">
         {data?.info?.prev && (
-          <button className="btn btn-outline-primary" onClick={prevPage}>
+          <button className="btn btn-primary" onClick={prevPage}>
             Previous
           </button>
         )}
         {/* <button className='btn btn-light'>{currentPage}</button> */}
         {data?.info?.next && (
-          <button className="btn btn-outline-primary" onClick={nextPage}>
+          <button className="btn btn-primary" onClick={nextPage}>
             Next
           </button>
         )}
+        
       </div>
 
       <div
@@ -146,17 +149,18 @@ export default function Character({ fetchedData }) {
       </div>
       <div className="btn">
         {data?.info?.prev && (
-          <button className="btn btn-outline-primary" onClick={prevPage}>
+          <button className="btn btn-primary" onClick={prevPage}>
             Previous
           </button>
         )}
         {/* <button className='btn btn-light'>{currentPage}</button> */}
         {data?.info?.next && (
-          <button className="btn btn-outline-primary" onClick={nextPage}>
+          <button className="btn btn-primary" onClick={nextPage}>
             Next
           </button>
         )}
       </div>
+    </div>
     </>
   );
 }
