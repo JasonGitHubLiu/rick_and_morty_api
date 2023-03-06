@@ -7,7 +7,7 @@ export default function About() {
           This web application is about the show Rick and Morty! Here, you will
           be able to find all the different information about each character.
           For example, after you click onto a specific character, information
-          about the character's name, origin, species, and location will be
+          about the character's name, origin, species, location, and status will be
           displayed.
         </p>
       </div>
