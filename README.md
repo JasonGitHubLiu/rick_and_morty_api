@@ -23,13 +23,14 @@ I also used Bootstrap to style certain things in my website such as the search b
 
 1. You paste this code towards the top of the index.html file, inside the head tag. Make sure to get rid of spacing between the < and > in link/script
 
-< link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/ >
+- < link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/ >
 
 2. You paste this code towards the bottom of the index.html file, at the end of the body tag. Make sure to get rid of spacing between the < and > in link/script
 
-< script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">< /script >
+- < script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">< /script >
 
 At the end, I also added a favicon of Rick in the index.html file!
+
 - < link rel="icon" href="%PUBLIC_URL%/rickfav2.png" / >
 
 ## Reloading Issues
