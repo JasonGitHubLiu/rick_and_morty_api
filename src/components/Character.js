@@ -10,10 +10,7 @@ export default function Character({ fetchedData }) {
   let [prev, setPrev] = useState('');
   let [input, setInput] = useState('');
   let [name, setName] = useState('');
-  let [search, setSearch] = useState('');
-
-  // let [url, setUrl] = useState('')
-  //filter -conditional, if it does something, return true, else return false. and use includes
+  // let [search, setSearch] = useState('');
 
   useEffect(() => {
     (async function () {
@@ -37,7 +34,6 @@ export default function Character({ fetchedData }) {
   if (fetchedData) {
     display = data?.results?.map((mapResults) => {
       let { id, name, image } = mapResults;
-      // let { id, name, image, location, status } = mapResults;
       return (
         <div className="border border-primary rounded-4 border-3">
           <br></br>
@@ -55,30 +51,10 @@ export default function Character({ fetchedData }) {
     display = 'No Character Found :(';
   }
 
-  // function page() {
-  //   // console.log('hi')
-  //   // console.log(next)
-  //   // let urlPage = next.match(/(\d+)/); //grabs number from string and puts into variable
-  //   // console.log(urlPage[0])
-  //   setCurrentPage(urlPage[0]);
-  // }
-
-  // function prevPage() {
-  //   console.log(currentPage);
-  //   // console.log(url)
-  //   let urlPage = currentPage - 1;
-  //   setCurrentPage(urlPage);
-  // }
-
   function handleChange(e) {
     setName(input);
     console.log(name);
   }
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   getChar(input);
-  // }
 
   const nextPage = async () => {
     console.log('hello');
@@ -89,10 +65,6 @@ export default function Character({ fetchedData }) {
     setNext(data.info.next);
     // console.log(next)
     setPrev(data.info.prev);
-    // console.log(prev)
-    // console.log(next);
-    // console.log(prev);
-    // console.log(data);
   };
   const prevPage = async () => {
     console.log('hello');
@@ -103,10 +75,6 @@ export default function Character({ fetchedData }) {
     setNext(data.info.next);
     // console.log(next)
     setPrev(data.info.prev);
-    // console.log(prev)
-    // console.log(next);
-    // console.log(prev);
-    // console.log(data);
   };
 
   return (
@@ -149,7 +117,6 @@ export default function Character({ fetchedData }) {
             gridGap: '10px',
           }}
         >
-          {/* <div></div> */}
           {display}
         </div>
         <div className="btn">

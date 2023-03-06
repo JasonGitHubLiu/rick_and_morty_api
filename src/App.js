@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   let [currentPage, setCurrentPage] = useState(1);
   let [fetchedData, setFetchedData] = useState([]);
-  let { info, results } = fetchedData;
+  let { results } = fetchedData;
 
   console.log(results);
   let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
@@ -44,6 +44,3 @@ function App() {
 
 export default App;
 
-// rick and morty website // https://rickandmortyapi.com/documentation/#javascript-client
-// rick and morty characters //https://rickandmortyapi.com/api/character
-// rick and morty api's (characters, locations, episodes) //https://rickandmortyapi.com/api
