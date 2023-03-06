@@ -36,7 +36,7 @@ Here is the link: https://stackoverflow.com/questions/50752350/page-not-found-wh
 
 ## Unsolved Issues
 
-When I split my website to take up only half of my screen and I scroll to the right side of my Character page, part of the background is white, instead of black. I've tried many things, but have been unsucessful at identifying a solution to my issue.
+When I split my website to take up only half of my screen and I scroll to the right side of my Character page, part of the background is white, instead of black. I've tried to solve the problem, but have been unsucessful at identifying a solution to my issue.
 
 ## API Reference
 
