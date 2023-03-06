@@ -29,6 +29,9 @@ I also used Bootstrap to style certain things in my website such as the search b
 
 < script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">< /script >
 
+At the end, I also added a favicon of Rick in the index.html file!
+- <link rel="icon" href="%PUBLIC_URL%/rickfav2.png" />
+
 ## Reloading Issues
 
 I ran into some issues when reloading. After deploying my website to netlify, I noticed that I would get a 404 error whenever I refreshed my page. It would say, "Page Not Found Looks like you've followed a broken link or entered a URL that doesn't exist on this site when refreshing". To bypass this problem, I created a \_redirects file in the public folder and put in /\* /index.html 200. Thanks to Stack Overflow, I was able to solve this issue.
