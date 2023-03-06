@@ -1,4 +1,4 @@
-Link to Netlify live site: https://comfy-lolly-7c6723.netlify.app/
+Link to Netlify live site: https://rick-and-morty-api1.netlify.app/
 
 # RICK AND MORTY WEBSITE
 
