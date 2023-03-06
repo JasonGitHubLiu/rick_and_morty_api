@@ -40,7 +40,7 @@ When I split my website to take up only half of my screen and I scroll to the ri
 
 ## API Reference
 
-Here is the [link](https://rickandmortyapi.com/documentation/#rest) to the Rick and Morty API that I used to create my website.
-Rick and Morty [website](https://rickandmortyapi.com/documentation/#javascript-client)
-Rick and Morty [characters](https://rickandmortyapi.com/api/character)
-Rick and Morty [api](https://rickandmortyapi.com/api)
+- Here is the [link](https://rickandmortyapi.com/documentation/#rest) to the Rick and Morty API that I used to create my website.
+- Rick and Morty [website](https://rickandmortyapi.com/documentation/#javascript-client)
+- Rick and Morty [characters](https://rickandmortyapi.com/api/character)
+- Rick and Morty [api](https://rickandmortyapi.com/api)
