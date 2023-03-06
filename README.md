@@ -1,5 +1,3 @@
-A README.mdfile with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
-
 Link to Netlify live site: https://comfy-lolly-7c6723.netlify.app/
 
 # RICK AND MORTY WEBSITE
